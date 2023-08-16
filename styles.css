@@ -6,41 +6,48 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-size: 16px; 
+    font-size: 14px; /* Slightly reduced font size */
 }
 
 .calculator {
     border: 2px solid rgba(0,255,255,0.5);
     background: rgba(10, 10, 10, 0.5);
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0,255,255,0.5);
     backdrop-filter: blur(5px);
-    width: 80vw;
-    max-width: 300px;
+    width: 60vw; /* Reduced width */
+    max-width: 280px; /* Reduced max-width slightly */
 }
 
 .history {
     color: #0ff;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 10px; /* Reduced font size */
     overflow-y: auto;
-    max-height: 50px;
+    max-height: 40px; /* Reduced max-height */
 }
 
 .display {
     width: 100%;
-    padding: 10px 15px;
-    font-size: 24px;
+    padding: 8px 12px; /* Adjusted padding */
+    font-size: 20px; /* Reduced font size */
     background: transparent;
     border: 2px solid rgba(0,255,255,0.5);
     color: #0ff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: right;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,255,255,0.5);
     outline: none;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px; /* Slightly reduced gap between buttons */
+}
+
 
 .buttons {
     display: grid;
